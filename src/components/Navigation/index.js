@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const categories = [
@@ -11,7 +12,7 @@ const categories = [
    
   ];
 
-function Nav() {
+function Navigation() {
     return (
         <header>
            
@@ -35,4 +36,4 @@ function Nav() {
     )
 }
 
-export default Nav;
+export default Navigation;
