@@ -16,7 +16,7 @@ function Navigation() {
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link" href="/">About Me</a>
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="#">Projects</a>
                             <a class="nav-link" href="#">Contact Me</a>
                             <a class="nav-link" href="#">Resume</a>
                         </div>

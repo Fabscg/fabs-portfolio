@@ -1,15 +1,29 @@
 import React from "react";
+import projects from '../../projects'
 
 
 
-function Project() {
+function createCard(props) {
+
+    const project = props
+    return <Card
+        key={project.id}
+        name={project.title}
+        img={project.imgURL}
+        github={project.github}
+        text={project.description}
+    ></Card>
+}
+
+
+function Project(props) {
     return (
         <div>
-            <img></img>
-            <h2>Title</h2>
-            <p>Description</p>
+            <h1>Project</h1>
+            {projects.map(createCard)}
         </div>
     )
 }
+
 
 export default Project;

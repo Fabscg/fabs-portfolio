@@ -1,11 +1,14 @@
 body {
   margin: 0;
-  font-family: 'Cormorant', serif;
-  /* font-family: 'Syne Mono', monospace; */
+  font-family: 'Syne Mono', monospace;
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
   background-color: black;
   color:white;
+}
+
+.navbar-brand{
+  font-size: 50px;
 }
 
 
@@ -15,14 +18,24 @@ body {
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(178,16,16,1) 35%, rgba(0,212,255,1) 100%);
 }
 
+
 .navbar-nav .nav-link{
-text-align: right;
-font-weight: bold;
 cursor: pointer;
+font-size: 20px;
+font-family: 'Syne Mono', monospace;
 }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left:50px;
+}
+
 
 .center{
  text-align: center;
+}
+
+.images a{
+  width:50%;
 }
 
 footer{
@@ -31,7 +44,7 @@ footer{
   bottom:0;
   color:rgb(157, 156, 156);
   height: 2.5rem;
-  padding-bottom: 30px;
+  margin:40px auto 20px;
 }
 
 
