@@ -21,6 +21,19 @@ font-weight: bold;
 cursor: pointer;
 }
 
+.center{
+ text-align: center;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  bottom:0;
+  color:rgb(157, 156, 156);
+  height: 2.5rem;
+  padding-bottom: 30px;
+}
+
 
 .fa-solid{
   color:greenyellow;
