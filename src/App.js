@@ -13,10 +13,9 @@ import './App.css';
 function App() {
 
 
-  // use state for currentPage setCurrnetpage
-  const [currentPage, setCurrentPage] = useState("");
+  const [currentPage, setCurrentPage] = useState("About");
 
-  // TODO: Add a comment describing the functionality of this method
+
   const renderPage = () => {
     if (currentPage === 'About') {
       return <About />;
@@ -33,22 +32,20 @@ function App() {
     <div>
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage}
-
-
-
       <div>
         <main>
-
           {renderPage()}
 
           <About></About>
           <Portfolio></Portfolio>
-
-        </main> 
+          <ContactForm></ContactForm>
+        </main>
         <Footer></Footer>
       </div>
     </div>
+
   )
 }
+
 
 export default App;
