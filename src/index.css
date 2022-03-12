@@ -7,6 +7,8 @@ body {
   color:white;
 }
 
+/* NAVBAR AND LINKS */
+
 .navbar-brand{
   font-size: 50px;
 }
@@ -38,7 +40,7 @@ font-family: 'Syne Mono', monospace;
   width:50%;
 }
 
-/* //contact form */
+/* CONTACT FORM */
 
 .contact-form{
   text-align: -webkit-center;
@@ -58,7 +60,7 @@ font-family: 'Syne Mono', monospace;
   border:solid gray 1px;
 }
 
-
+/* FOOTER AND ICONS  */
 
 .icons-bottom{
   display: flex;

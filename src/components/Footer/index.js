@@ -15,7 +15,7 @@ function Footer() {
             </div>
 
             <footer>
-                <p>Copyrigth by <i className="icon-terminal fa-solid fa-terminal"></i> Fabiola C. Gamboa {currentYear}</p>
+                <p>Copyright by <i className="icon-terminal fa-solid fa-terminal"></i> Fabiola C. Gamboa {currentYear}</p>
             </footer>
         </section>
 

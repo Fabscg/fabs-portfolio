@@ -1,7 +1,9 @@
-const projects = [
+import bikeHaven from '../../assets/project-img/bike-haven.png'
+
+export const projects = [
     {
         id: 1,
-        imgURL: "./assets/project-img/bike-haven.png",
+        imgURL: bikeHaven,
         title: "Bike Haven",
         github: "https://github.com/Fabscg/Bike-Haven",
         description: "Bike Haven was a group project. Six of us collaborated to develop a cycling/parts sales site.We used Node as the server, MySQL as the DB, Handlebars library for the templates, Bootstrap, bcript, express, Sequelize, dotenv dependencies, and Heroku for the deployment.My greatest personal challenge with this project was Handlebars, as I had never used it and wanted to use it for this project to challenge myself."
@@ -36,4 +38,3 @@ const projects = [
     },
 ]
 
-export default projects

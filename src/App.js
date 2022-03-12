@@ -1,4 +1,4 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 import About from './components/About'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer';
@@ -10,21 +10,43 @@ import './index.css'
 import './App.css';
 
 
-function App(props) {
+function App() {
 
- 
+
+  // use state for currentPage setCurrnetpage
+  const [currentPage, setCurrentPage] = useState("");
+
+  // TODO: Add a comment describing the functionality of this method
+  const renderPage = () => {
+    if (currentPage === 'About') {
+      return <About />;
+    }
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
+    }
+    return <ContactForm />;
+  };
+
+  const handlePageChange = (page) => setCurrentPage(page)
+
   return (
     <div>
-    <Navigation></Navigation>
-     
-      <main>
-      
-        <ContactForm></ContactForm>
-        <About></About>
-        <Portfolio></Portfolio>
+      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+      {renderPage}
 
-      </main>
-      <Footer></Footer>
+
+
+      <div>
+        <main>
+
+          {renderPage()}
+
+          <About></About>
+          <Portfolio></Portfolio>
+
+        </main> 
+        <Footer></Footer>
+      </div>
     </div>
   )
 }
