@@ -1,28 +1,32 @@
-import React from 'react';
+// import React, { useState } from 'react';
 import About from './components/About'
 import Navigation from './components/Navigation'
-// import Project from './components/Project'
 import Footer from './components/Footer';
-import Header from './components/Header';
-import './index.css'
+import ContactForm from './components/Contact';
+import Portfolio from './components/Portfolio'
 
+
+import './index.css'
 import './App.css';
 
-function App() {
+
+function App(props) {
+
+ 
   return (
     <div>
-      <Navigation></Navigation>
+    <Navigation></Navigation>
+     
       <main>
-      <Header></Header>
-        {/* <Project></Project> */}
+      
+        <ContactForm></ContactForm>
         <About></About>
+        <Portfolio></Portfolio>
+
       </main>
       <Footer></Footer>
-
     </div>
   )
 }
-
-
 
 export default App;

@@ -1,12 +1,14 @@
-import React from "react";
+
+import React, { useEffect } from "react";
+import { capitalizeFirstLetter } from "../../utils/helpers"
 
 
 
 
-function Navigation() {
+function Navigation(props) {
+
     return (
         <header>
-           
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/">Fab's Portfolio</a>
@@ -15,10 +17,10 @@ function Navigation() {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link" href="/">About Me</a>
-                            <a class="nav-link" href="#">Projects</a>
-                            <a class="nav-link" href="#">Contact Me</a>
-                            <a class="nav-link" href="#">Resume</a>
+                            <a className="nav-link" href="#about">About Me</a>
+                            <a className="nav-link" href="#project">Projects</a>
+                            <a className="nav-link" href="#contact">Contact Me</a>
+                            <a className="nav-link" href="#resume">Resume</a>
                         </div>
                     </div>
                 </div>

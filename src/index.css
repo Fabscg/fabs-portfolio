@@ -38,6 +38,41 @@ font-family: 'Syne Mono', monospace;
   width:50%;
 }
 
+/* //contact form */
+
+.contact-form{
+  text-align: -webkit-center;
+  
+}
+.username{
+  border-radius: 15px 15px 0 0;
+  margin-top:20px;
+  height: 40px;
+  border:solid gray 1px;
+}
+.email{
+  height: 40px;
+}
+.message{
+  border-radius:0 0 15px 15px;
+  border:solid gray 1px;
+}
+
+
+
+.icons-bottom{
+  display: flex;
+  justify-content: center;
+  gap:40px;
+}
+
+.icon{
+  color:white;
+}
+.icon:hover{
+  color:rgb(175, 175, 175);
+}
+
 footer{
   display: flex;
   justify-content: center;
@@ -48,6 +83,6 @@ footer{
 }
 
 
-.fa-solid{
+.icon-terminal{
   color:greenyellow;
 }

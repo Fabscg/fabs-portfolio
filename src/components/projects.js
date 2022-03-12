@@ -8,10 +8,10 @@ const projects = [
     },
     {
         id: 2,
-        imgURL: "",
-        title: "",
-        github: "",
-        description: ""
+        imgURL: "./assets/project-img/passGenerator.png",
+        title: "Password Generator",
+        github: "https://github.com/Fabscg/passgenerator",
+        description: "This project is for individuals who like to use difficult password, however have a hard time coming up with them. It can be used to generate a password for any social media account. The languages used for this project are HTML, CSS and JavaScript."
     },
     {
         id: 3,
@@ -29,11 +29,11 @@ const projects = [
     },
     {
         id: 5,
-        imgURL: "",
-        title: "",
-        github: "",
-        description: ""
+        imgURL: "./assets/project-img/hero-bg.jpg",
+        title: "Run Buddy",
+        github: "https://github.com/Fabscg/run-buddy",
+        description: "Run buddy was a design from my bootcamp. This was one of the first projects that I worked on, and as such, I found it to be a big challenge at the time. It was created for a gym company, and provides information about their trainers and the location, while also allowing people to sign up for newsletters. Languages used here are HTML and CSS style."
     },
 ]
 
-export default projects;
+export default projects
