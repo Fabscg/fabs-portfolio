@@ -17,7 +17,7 @@ function Navigation({ currentPage, handlePageChange }) {
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a
-                                className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+                                className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
                                 href="#about"
                                 onClick={() => handlePageChange('About')}>About Me</a>
                             <a className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}

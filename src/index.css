@@ -36,6 +36,8 @@ font-family: 'Syne Mono', monospace;
  text-align: center;
 }
 
+
+
 .icon-card{
   color:white;
 }
@@ -44,13 +46,18 @@ font-family: 'Syne Mono', monospace;
   color:rgb(171, 171, 171);
 }
 
-.project-img:hover{
-  opacity: 0.5;
+.img-fluid{
+  transition: transform .2s;
+}
+
+.img-fluid:hover{
+  transform: scale(1.5)
 }
 
 .row{
   flex-direction: row-reverse;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 

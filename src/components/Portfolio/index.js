@@ -18,7 +18,8 @@ function Portfolio() {
                 projects.map((projects) => (
                     <div className="row g-0 bg-dark text-light">
                         <div className="col-md-4">
-                            <img src={projects.imgURL} className="img-fluid rounded-start" alt="project" />
+                        <a href={projects.URL}><img src={projects.imgURL} className="img-fluid rounded-start" alt="project" /></a>
+                            
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
