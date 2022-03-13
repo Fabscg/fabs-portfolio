@@ -65,7 +65,18 @@ font-family: 'Syne Mono', monospace;
 /* CONTACT FORM */
 
 .contact-form{
+ display:flex;
+ justify-content: center;
+ align-items: center;
   text-align: -webkit-center;
+  margin-top: 40px;
+  padding-left: 30px;
+  text-align: center;
+}
+.input-form{
+  display:table-caption;
+  flex-wrap: wrap;
+  padding:10px 0 10px;
   
 }
 .username{
@@ -82,12 +93,16 @@ font-family: 'Syne Mono', monospace;
   border:solid gray 1px;
 }
 
-/* FOOTER AND ICONS  */
+/* FOOTER AND ICONS/CONTACT-INFO */
+
+
 
 .icons-bottom{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap:40px;
+  padding-bottom: 30px;
 }
 
 .icon{
@@ -98,15 +113,34 @@ font-family: 'Syne Mono', monospace;
 }
 
 footer{
-  display: flex;
-  justify-content: center;
-  bottom:0;
+  position: absolute;
+  display: block;
+  bottom:40px;
   color:rgb(157, 156, 156);
   height: 2.5rem;
-  margin:40px auto 20px;
+  margin:40px auto 40px auto;
 }
 
 
 .icon-terminal{
   color:greenyellow;
+}
+
+@media screen and (max-width:980px){
+  .navbar-brand{
+    display:block;
+   flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .cover-image{
+    display: none;
+  }
+  .contact-form{
+    display:block;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }

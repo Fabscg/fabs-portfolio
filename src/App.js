@@ -11,7 +11,7 @@ import './App.css';
 
 function RenderPage({ currentPage }) {
 
-  if (currentPage === '/') {
+  if (currentPage === 'About') {
     return <About />;
 
   }

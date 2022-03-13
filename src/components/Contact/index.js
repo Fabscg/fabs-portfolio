@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { validateEmail } from '../../utils/helpers';
+import coverImage from '../../assets/cover/iMac.jpg';
 
 function ContactForm() {
     const [formState, setFormState] =
@@ -37,15 +38,15 @@ function ContactForm() {
         <section className="contact-form">
             <h1>Contact me</h1>
             <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
+                <div className="input-form">
                     <label htmlFor="name">Name:</label>
                     <input className="username" type="text" name="name" defaultValue={name} onBlur={handleChange} />
                 </div>
-                <div>
+                <div className="input-form">
                     <label htmlFor="email">Email:</label>
                     <input className="email" type="email" name="email" defaultValue={email} onBlur={handleChange} />
                 </div>
-                <div>
+                <div className="input-form">
                     <label htmlFor="message">Message:</label>
                     <textarea className="message" name="message" row="10" defaultValue={message} onBlur={handleChange}></textarea>
                 </div>
@@ -57,6 +58,9 @@ function ContactForm() {
                 <button className="btn btn-outline-light">Submit</button>
 
             </form>
+            <div>
+                <img src={coverImage} className="cover-image" style={{ width: "80%" }} alt="cover" />
+            </div>
         </section>
 
     )
