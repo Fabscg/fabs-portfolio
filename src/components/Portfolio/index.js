@@ -5,7 +5,7 @@ import { projects } from './projects'
 const cardStyle = {
     width: '70%',
     margin:'30px auto 30px auto',
-    paddingBottom:'20px'
+    border:'none'
 };
 
 function Portfolio() {
@@ -13,19 +13,20 @@ function Portfolio() {
     return (
 
 
-        <div className="card mb-3" style={cardStyle}>
+        <div className="card" style={cardStyle}>
             {
                 projects.map((projects) => (
-                    <div className="row g-0 bg-light text-dark">
+                    <div className="row g-0 bg-dark text-light">
                         <div className="col-md-4">
                             <img src={projects.imgURL} className="img-fluid rounded-start" alt="project" />
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
-                                <h5 className="card-title">{projects.title}</h5>
+                                <h5 className="card-title text-center">{projects.title}</h5>
+                                <a href={projects.github}><i class="icon-card fa-brands fa-github fa-2x"></i></a>
                                 <p className="card-text">{projects.description}</p>
-                                <a href="https://github.com/Fabscg/${}"><i class="fa-brands fa-github"></i></a>
                             </div>
+                            
                         </div>
                     </div>
                 ))
