@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 
 import React from "react";
 
@@ -16,15 +17,16 @@ function Navigation({ currentPage, handlePageChange }) {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
+
                             <a
-                                className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
-                                href="#about"
+                                className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+
                                 onClick={() => handlePageChange('About')}>About Me</a>
                             <a className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-                                href="#portfolio"
+
                                 onClick={() => handlePageChange('Portfolio')}>Portfolio</a>
                             <a className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-                                href="#contact"
+
                                 onClick={() => handlePageChange('Contact')}>Contact Me</a>
 
                             <a className="nav-link" href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:d3005444-6e79-4477-9b04-096dbb293286">Resume</a>
