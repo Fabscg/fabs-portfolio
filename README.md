@@ -51,3 +51,7 @@
   ## [Github](https://github.com/Fabscg)
   
   ## [Email](fabiscg79@gmail.com)
+
+  ## ![Mock-up](./src/assets/image/react-portfolio.png)
+
+  
