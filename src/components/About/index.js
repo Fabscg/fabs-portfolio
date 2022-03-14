@@ -1,4 +1,5 @@
 import React from 'react';
+import profileImg from '../../assets/profileImg/Fabs.jpg';
 
 
 
@@ -7,13 +8,34 @@ import React from 'react';
 function About(props) {
   return (
     <section className="center">
-      <h1 id="about">About me</h1>
-      
-      <div className="my-2">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+      <div>
+        <h1 id="about" className="">About me</h1>
       </div>
+
+      <div className="info-about row">
+        <div className="aboutImg col-lg-6 col-md-6">
+          <img src={profileImg} className="profile-image" alt="my-avatar" />
+        </div>
+
+        <div className="col-lg-6 col-md-6">
+          <p className="profile-image">
+            People find me to be an upbeat self-motivated team player with excellent
+            communication skills. For the past several years, I have worked in customer service and hospitality, and
+            have also spearheaded my own business. Having held a lifelong affinity for coding and programming, I
+            endeavoured to equip myself with the knowledge and skillset to pursue a career as a developer. Over the
+            last two
+            years, I independently dedicated myself to deepening my studies and experience in web development and
+            acquired
+            proficiency in the breadth of programming languages. I am a curious and driven individual, and excited
+            for an opportunity to specialize in this dynamic industry.
+          </p>
+        </div>
+      </div>
+
+
+
+
+
 
     </section>
 

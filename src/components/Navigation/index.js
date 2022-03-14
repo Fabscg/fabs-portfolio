@@ -26,7 +26,8 @@ function Navigation({ currentPage, handlePageChange }) {
                             <a className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
                                 href="#contact"
                                 onClick={() => handlePageChange('Contact')}>Contact Me</a>
-                            <a className="nav-link" href="#resume">Resume</a>
+
+                            <a className="nav-link" href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:d3005444-6e79-4477-9b04-096dbb293286">Resume</a>
                         </div>
                     </div>
                 </div>

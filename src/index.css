@@ -31,11 +31,22 @@ font-family: 'Syne Mono', monospace;
   padding-left:50px;
 }
 
+/* //ABOUT ME */
+
 
 .center{
- text-align: center;
+  text-align: center;
+  margin:30px auto 30px;
+}
+.info-about{
+  display: inline-flex;
+
 }
 
+.profile-image{
+  padding:50px 50px 50px 50px;
+  width:100%;
+}
 
 
 .icon-card{
@@ -89,7 +100,7 @@ font-family: 'Syne Mono', monospace;
   height: 40px;
 }
 .message{
-  border-radius:0 0 15px 15px;
+  border-radius:0 0 15 15px;
   border:solid gray 1px;
 }
 
@@ -103,6 +114,7 @@ font-family: 'Syne Mono', monospace;
   justify-content: center;
   gap:40px;
   padding-bottom: 30px;
+  text-align: center;
 }
 
 .icon{
@@ -113,14 +125,9 @@ font-family: 'Syne Mono', monospace;
 }
 
 footer{
-  position: absolute;
-  display: block;
-  bottom:40px;
-  color:rgb(157, 156, 156);
-  height: 2.5rem;
-  margin:40px auto 40px auto;
+  color:rgb(171, 171, 171);
+  margin-top: 20px;
 }
-
 
 .icon-terminal{
   color:greenyellow;
@@ -131,16 +138,34 @@ footer{
     display:block;
    flex-wrap: wrap;
   }
+
 }
 
 @media screen and (max-width:768px) {
   .cover-image{
     display: none;
   }
-  .contact-form{
-    display:block;
-    justify-content: center;
-    align-items: center;
+  #contact-form{
+   display:-ms-inline-grid;
   }
-  
+  .navbar{
+    width:100%;
+  }
+
+  .navbar-brand{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+  }
+  .nav-link{
+    line-height:7px;
+  }
+  .navbar-toggler{
+    margin-left: 20px;
+    bottom: 30px;
+  }
+
+  #aboutImg{
+    display: none;
+  }
 }

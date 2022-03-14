@@ -5,20 +5,24 @@ const currentYear = new Date().getFullYear()
 
 function Footer() {
     return (
-    
-        <footer d-flex justify-content-center align-items-center>
-            <div className="icons-bottom">
-                <a href="tel:647-888-4713"><i className="icon fa-solid fa-envelope fa-2x"></i></a>
-                <a href="https://github.com/Fabscg"><i className="icon fa-brands fa-github fa-2x"></i></a>
-                <a href="www.linkedin.com/in/fabicastaneda"><i className="icon fa-brands fa-linkedin fa-2x"></i></a>
-                <a href="mailto:fabiscg79@gmail.com"><i class="icon fa-solid fa-phone fa-2x"></i></a>
+        <div className="d-flex justify-content-center text-center">
+            <footer >
+                <div className="icons-bottom">
+                    <a href="mailto:fabiscg79@gmail.com"><i className="icon fa-solid fa-envelope fa-2x"></i></a>
+                    <a href="https://github.com/Fabscg"><i className="icon fa-brands fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/fabicastaneda/"><i
+                                    class="icon fab fa-linkedin fa-2x"></i></a>
+                    <a href="tel:647-888-4713"><i class="icon fa-solid fa-phone fa-2x"></i></a>
+                    <a href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:d3005444-6e79-4477-9b04-096dbb293286"><i
+                                    class="icon fa-solid fa-file-pdf fa-2x"></i></a>
+                </div>
 
-            </div>
 
-            
-                <p>Copyright by <i className="icon-terminal fa-solid fa-terminal"></i> Fabiola C. Gamboa {currentYear}</p>
+                <p class="pb-5">Copyright by <i className="icon-terminal fa-solid fa-terminal"></i> Fabiola C. Gamboa {currentYear}</p>
             </footer>
-       
+        </div>
+
+
 
     )
 }
