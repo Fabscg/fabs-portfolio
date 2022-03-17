@@ -28,7 +28,10 @@ font-family: 'Syne Mono', monospace;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding-left:50px;
+  padding-left:20px;
+  padding-top: 10px;
+  color:white;
+  margin-inline-start: auto;
 }
 
 /* //ABOUT ME */
@@ -133,9 +136,8 @@ footer{
 }
 
 @media screen and (max-width:980px){
-  .navbar-brand{
-    display:block;
-   flex-wrap: wrap;
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin-inline-start: auto;
   }
 
 }
@@ -160,8 +162,7 @@ footer{
     line-height:7px;
   }
   .navbar-toggler{
-    margin-left: 20px;
-    bottom: 30px;
+    margin-left: 10px;
   }
 
   #aboutImg{
