@@ -68,10 +68,23 @@ font-family: 'Syne Mono', monospace;
   transform: scale(1.5)
 }
 
+.card{
+  background-color: black;
+}
+
 .row{
-  flex-direction: row-reverse;
+  margin:20px 0 20px;
   align-items: center;
   flex-wrap: wrap;
+  border-radius: 0 100px 0 100px;
+}
+
+.p{
+  height: 30%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  width: 200px;
 }
  
 
@@ -139,6 +152,11 @@ footer{
   .navbar-expand-lg .navbar-nav .nav-link {
     margin-inline-start: auto;
   }
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-inline-start: auto;
+    font-size: smaller;
+    position: relative;
+}
 
 }
 
@@ -152,6 +170,10 @@ footer{
   .navbar{
     width:100%;
   }
+  .card {
+    position: sticky;
+    z-index: -1;
+}
 
   .navbar-brand{
     width: 100%;
