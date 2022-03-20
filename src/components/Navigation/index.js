@@ -29,7 +29,7 @@ function Navigation({ currentPage, handlePageChange }) {
 
                                 onClick={() => handlePageChange('Contact')}>Contact Me</a>
 
-                            <a className="nav-link" href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:d3005444-6e79-4477-9b04-096dbb293286">Resume</a>
+                            <a className="nav-link" href="https://drive.google.com/file/d/1kvbXQaYdkMTpmI_2ESDmQCqmOX-gEDej/view?usp=sharing">Resume</a>
                         </div>
                     </div>
                 </div>
