@@ -4,15 +4,16 @@ import passGenerator from '../../assets/project-img/passGenerator.png'
 import techBlog from '../../assets/project-img/tech-blog-site.png'
 import runBuddy from '../../assets/project-img/hero-image.jpg'
 import artisLyrics from '../../assets/project-img/artist&lyrics-smartphone.png'
+import missionPossible from '../../assets/project-img/mission-possible.png'
 
 export const projects = [
     {
-        id: 1,
-        imgURL: bikeHaven,
-        title: "Bike Haven",
-        URL:"https://bike-haven.herokuapp.com/",
-        github: "https://github.com/Fabscg/Bike-Haven",
-        description: "Bike Haven was a group project. Six of us collaborated to develop a cycling/parts sales site.We used Node as the server, MySQL as the DB, Handlebars library for the templates, Bootstrap, bcript, express, Sequelize, dotenv dependencies, and Heroku for the deployment.My greatest personal challenge with this project was Handlebars, as I had never used it and wanted to use it for this project to challenge myself."
+        id:1,
+        imgURL:missionPossible,
+        title:"Mission: Possible",
+        URL:"https://glacial-cliffs-90348.herokuapp.com/",
+        github:"https://github.com/Fabscg/group-3-project",
+        description:"This app was created with a team of 6 of us. In this site we want people to help other people by donating to charities. we have 3 different international charities that you can find in our site and make a donation within our site or the main site link. Technologies used are React, GrapghQL, Express, Mongo, Node, Apollo Concurrently dependency to be able to use two different servers in one."
     },
     {
         id: 2,
@@ -48,6 +49,14 @@ export const projects = [
     },
     {
         id: 6,
+        imgURL: bikeHaven,
+        title: "Bike Haven",
+        URL:"https://bike-haven.herokuapp.com/",
+        github: "https://github.com/Fabscg/Bike-Haven",
+        description: "Bike Haven was a group project. Six of us collaborated to develop a cycling/parts sales site.We used Node as the server, MySQL as the DB, Handlebars library for the templates, Bootstrap, bcript, express, Sequelize, dotenv dependencies, and Heroku for the deployment.My greatest personal challenge with this project was Handlebars, as I had never used it and wanted to use it for this project to challenge myself."
+    },
+    {
+        id: 7,
         imgURL: techBlog,
         title: "Tech Blog",
         URL:"https://afternoon-crag-71461.herokuapp.com/login",

@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-
 import React from "react";
 
 
@@ -19,13 +17,13 @@ function Navigation({ currentPage, handlePageChange }) {
                         <div class="navbar-nav">
 
                             <a
-                                className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+                                href="#about" className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
 
                                 onClick={() => handlePageChange('About')}>About Me</a>
-                            <a className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+                            <a href="#portfolio" className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
 
                                 onClick={() => handlePageChange('Portfolio')}>Portfolio</a>
-                            <a className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                            <a href="#contact" className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
 
                                 onClick={() => handlePageChange('Contact')}>Contact Me</a>
 

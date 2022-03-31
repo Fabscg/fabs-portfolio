@@ -9,7 +9,7 @@ function About(props) {
   return (
     <section className="center">
       <div>
-        <h1 id="about" className="">About me</h1>
+        <h1 id="about" className="center">About me</h1>
       </div>
 
       <div className="info-about row">
